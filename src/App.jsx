@@ -3,7 +3,6 @@ import {  Routes, Route } from 'react-router-dom';
 import Slide1 from './Components/Carousels/Slide1';
 import './App.css';
 import CustomNavbar from './Components/Header/CustomNavbar';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Products from './Components/Main/Products';
 import ProductDetails from './Components/Main/ProductDetails';
 import Cart from './Components/Main/Cart';

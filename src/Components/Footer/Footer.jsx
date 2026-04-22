@@ -5,17 +5,15 @@ const Footer = () => {
   return (
     <div >
     <footer className=" text-dark pt-5 mt-5"
-         style={{backgroundColor:'#f853a0'}}>
-
-      
+      style={{backgroundColor:'#f853a0'}}>
       <div className="container text-center text-md-start">
-        <div className="row">
+     <div className="row">
           
      <div className="col-md-4 mb-3">
     <h5>E-commerce</h5>
     
-           <p>E-Commerce Website Using React </p>
-          </div>
+    <p>E-Commerce Website Using React </p>
+ </div>
 
   <div className="col-md-4 mb-3">
        <h6>Links</h6>
