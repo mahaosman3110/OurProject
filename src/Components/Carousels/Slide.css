@@ -1,0 +1,10 @@
+.carouselItem img{
+height:400px ;
+width:100%;
+object-fit: cover;
+border-radius: 15px;
+}
+.bgc{
+
+    background-color: #f1badc;
+}

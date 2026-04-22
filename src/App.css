@@ -1,0 +1,14 @@
+.App {
+  text-align: -webkit-center;
+  font-family: "Poppins", sans-serif;
+  color: #343434;
+}
+a{
+
+  text-decoration: none;
+}
+body{
+  background-color: #fff9fa;
+  margin: 0;
+  font-family: sans-serif;
+}
