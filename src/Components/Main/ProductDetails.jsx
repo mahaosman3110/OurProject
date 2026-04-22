@@ -7,14 +7,14 @@ function ProductDetails ({cart,setCart}) {
     const [productData,setProductData]= useState({})
     const params = useParams();
     useEffect(()=>{
-        fetch(`${api}/${params.id}`)
-        .then((res)=> res.json()).then((data)=> setProductData(data))
-    },[params.id])
+fetch(`${api}/${params.id}`)
+.then((res)=> res.json()).then((data)=> setProductData(data))
+},[params.id])
   return (
-    <div>
-        {productData.id && <Product product={productData} showButton={false} cart={cart} setCart={setCart}/>}
+<div>
+{productData.id && <Product product={productData} showButton={false} cart={cart} setCart={setCart}/>}
         
-    </div>
+</div>
   )
 }
 export default ProductDetails

@@ -83,26 +83,26 @@ function CustomNavbar1() {
       borderBottom: '1px solid #ffe4e1',
       boxShadow: '0px 2px 8px rgba(255, 105, 180, 0.1)' 
     }}>
-      <Container sx={{ py: 1.5, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+ <Container sx={{ py: 1.5, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         
         
-        <Typography variant="h5" sx={{ fontWeight: 'bold', color: '#ff1493', cursor: 'pointer' }}>
-          E-commerce
-        </Typography>
+ <Typography variant="h5" sx={{ fontWeight: 'bold', color: '#ff1493', cursor: 'pointer' }}>
+  E-commerce
+ </Typography>
 
         
-        <Search>
-          <SearchIconWrapper>
-            <SearchIcon />
-          </SearchIconWrapper>
-          <StyledInputBase placeholder="Search products..." />
-        </Search>
+ <Search>
+    <SearchIconWrapper>
+   <SearchIcon />
+   </SearchIconWrapper>
+  <StyledInputBase placeholder="Search products..." />
+</Search>
 
         
-        <Stack direction="row" alignItems="center" spacing={2}>
+ <Stack direction="row" alignItems="center" spacing={2}>
           
           <List component="nav" sx={{ p: 0, bgcolor: '#ffffff', borderRadius: '20px', border: '1px solid #ffe4e1' }}>
-            <ListItem
+              <ListItem
               button
               onClick={handleClickListItem}
               sx={{ py: 0.5, px: 2 }}
@@ -118,26 +118,26 @@ function CustomNavbar1() {
           <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
             {options.map((option, index) => (
               <MenuItem key={option} selected={index === selectedIndex} onClick={(event) => handleMenuItemClick(event, index)}>
-                {option}
-              </MenuItem>
-            ))}
+  {option}
+        </MenuItem>
+    ))}
           </Menu>
 
-          <Stack direction="row" spacing={1}>
-            <IconButton size='large'>
-              <Link to="/cart" style={{color:'inherit',textDecoration:'none'}}/>
-              <StyledBadge badgeContent={4}>
-                <ShoppingCartIcon  onClick={() => navigate("/cart")} sx={{ color: '#ff69b4' }} />
-              </StyledBadge>
-            </IconButton>
+  <Stack direction="row" spacing={1}>
+                <IconButton size='large'>
+   <Link to="/cart" style={{color:'inherit',textDecoration:'none'}}/>
+     <StyledBadge badgeContent={4}>
+     <ShoppingCartIcon  onClick={() => navigate("/cart")} sx={{ color: '#ff69b4' }} />
+     </StyledBadge>
+        </IconButton>
 
             <IconButton>
-              <Person2OutlinedIcon sx={{ color: '#ff69b4' }} />
+                 <Person2OutlinedIcon sx={{ color: '#ff69b4' }} />
             </IconButton>
-          </Stack>
+              </Stack>
 
         </Stack>
-      </Container>
+         </Container>
     </Box>
   );
 }
